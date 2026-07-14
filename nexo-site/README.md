@@ -46,6 +46,13 @@ Não precisa instalar nada além de um navegador. Duas opções:
    `has-img`, ficando `<div class="team-photo has-img">`. Isso faz a foto
    substituir o quadro de placeholder.
 
+## Publicar no GitHub Pages (deploy automático)
+
+O projeto já inclui `.github/workflows/deploy.yml`, que publica o site
+automaticamente no GitHub Pages a cada `git push` na branch `main`.
+Basta criar o repositório no GitHub e ativar o Pages uma única vez —
+depois disso, todo commit em `main` já dispara o deploy sozinho.
+
 ## Antes de publicar
 
 - [ ] Trocar nome, e-mail e telefone reais

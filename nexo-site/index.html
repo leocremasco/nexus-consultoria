@@ -23,14 +23,14 @@
         </svg>
         <span>NEXO<span class="sub">Engenharia &amp; Gestão</span></span>
       </a>
-      <div class="nav-links">
+      <div class="nav-links" id="navLinks">
         <a href="#servicos">Soluções</a>
         <a href="#metodo">Método</a>
         <a href="#numeros">Resultados</a>
         <a href="#equipe">Equipe</a>
         <a href="#contato" class="btn btn-primary">Solicitar diagnóstico</a>
       </div>
-      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">☰</button>
     </nav>
   </div>
 </header>
@@ -312,5 +312,21 @@
   </div>
 </footer>
 
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+  menuToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    menuToggle.textContent = isOpen ? '✕' : '☰';
+  });
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.textContent = '☰';
+    });
+  });
+</script>
 </body>
 </html>
