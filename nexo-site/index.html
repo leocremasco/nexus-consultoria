@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXO — Consultoria em Engenharia, Automação &amp; Gestão Industrial</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="#top" class="logo">
+        <svg class="mark" viewBox="0 0 30 30" fill="none">
+          <rect x="0.75" y="0.75" width="28.5" height="28.5" rx="1" stroke="#f0a202" stroke-width="1.2"/>
+          <circle cx="15" cy="15" r="6.2" stroke="#f5f7f8" stroke-width="1.2"/>
+          <path d="M15 4.5V8.8M15 21.2V25.5M25.5 15H21.2M8.8 15H4.5" stroke="#f5f7f8" stroke-width="1.2"/>
+          <circle cx="15" cy="15" r="1.6" fill="#f0a202"/>
+        </svg>
+        <span>NEXO<span class="sub">Engenharia &amp; Gestão</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="#servicos">Soluções</a>
+        <a href="#metodo">Método</a>
+        <a href="#numeros">Resultados</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#contato" class="btn btn-primary">Solicitar diagnóstico</a>
+      </div>
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero" style="padding-top:168px;">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Consultoria em Engenharia, Tecnologia &amp; Gestão</span>
+        <h1>A ponte entre o <span class="accent">chão de fábrica</span> e a decisão estratégica.</h1>
+        <p class="lead">Integramos engenharia, administração, tecnologia e análise de dados para transformar indústrias, comércios e prestadores de serviço em operações mais eficientes, enxutas e competitivas — do sensor no equipamento ao painel de gestão da diretoria.</p>
+        <div class="hero-ctas">
+          <a href="#contato" class="btn btn-primary">Solicitar diagnóstico gratuito</a>
+          <a href="#servicos" class="btn btn-ghost">Conhecer as soluções</a>
+        </div>
+        <div class="hero-specs">
+          <div><strong>Engenharia física</strong>Sensores, CLPs, integração de máquinas</div>
+          <div><strong>Automação de processos</strong>RPA, Power Automate, integrações</div>
+          <div><strong>Gestão &amp; dados</strong>Administração, BI, indicadores</div>
+        </div>
+      </div>
+
+      <div class="schematic" aria-hidden="true">
+        <svg viewBox="0 0 420 380">
+          <!-- nodes -->
+          <rect class="sch-node-box" x="16" y="30" width="118" height="58" rx="2"/>
+          <text class="sch-label" x="32" y="55">SENSOR / CLP</text>
+          <text class="sch-label-sub" x="32" y="70">chão de fábrica</text>
+
+          <rect class="sch-node-box" x="16" y="160" width="118" height="58" rx="2"/>
+          <text class="sch-label" x="32" y="185">ERP / DADOS</text>
+          <text class="sch-label-sub" x="32" y="200">gestão administrativa</text>
+
+          <rect class="sch-node-box" x="16" y="290" width="118" height="58" rx="2"/>
+          <text class="sch-label" x="32" y="315">RPA / FLUXOS</text>
+          <text class="sch-label-sub" x="32" y="330">Power Automate</text>
+
+          <rect class="sch-node-box" x="270" y="160" width="134" height="58" rx="2"/>
+          <text class="sch-label" x="288" y="185">PAINEL NEXO</text>
+          <text class="sch-label-sub" x="288" y="200">decisão &amp; resultado</text>
+
+          <!-- connecting lines -->
+          <path class="sch-line" d="M134 59 C 200 59, 220 100, 270 175"/>
+          <path class="sch-line" d="M134 189 H 270"/>
+          <path class="sch-line" d="M134 319 C 200 319, 220 260, 270 205"/>
+
+          <!-- animated pulses -->
+          <path class="sch-pulse" d="M134 59 C 200 59, 220 100, 270 175" stroke-dasharray="10 340" stroke-dashoffset="350">
+            <animate attributeName="stroke-dashoffset" values="350;0" dur="2.8s" repeatCount="indefinite"/>
+          </path>
+          <path class="sch-pulse" d="M134 189 H 270" stroke-dasharray="8 200" stroke-dashoffset="208">
+            <animate attributeName="stroke-dashoffset" values="208;0" dur="2s" repeatCount="indefinite" begin="0.4s"/>
+          </path>
+          <path class="sch-pulse" d="M134 319 C 200 319, 220 260, 270 205" stroke-dasharray="10 340" stroke-dashoffset="350">
+            <animate attributeName="stroke-dashoffset" values="350;0" dur="2.8s" repeatCount="indefinite" begin="0.9s"/>
+          </path>
+
+          <circle class="sch-dot" cx="134" cy="59" r="3"/>
+          <circle class="sch-dot" cx="134" cy="189" r="3"/>
+          <circle class="sch-dot" cx="134" cy="319" r="3"/>
+          <circle class="sch-dot" cx="270" cy="175" r="3"/>
+          <circle class="sch-dot" cx="270" cy="205" r="3"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="servicos">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">O que fazemos</span>
+        <h2>Três frentes, uma só operação de melhoria.</h2>
+        <p>Cada projeto começa onde o cliente tem mais dor — e se conecta às demais frentes conforme o ganho aparece.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <span class="service-tag">Física &amp; controle</span>
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M10 6.5H14M6.5 10V14M17.5 10V14M10 17.5H14"/></svg>
+          <h3>Automação industrial</h3>
+          <p>Sensoriamento, integração de CLPs e máquinas, retrofit de linhas e sistemas de supervisão que dão visibilidade real ao chão de fábrica.</p>
+          <ul class="service-list">
+            <li>Sensores &amp; instrumentação</li>
+            <li>Integração de máquinas e CLPs</li>
+            <li>Supervisão e telemetria</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <span class="service-tag">Software &amp; fluxos</span>
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 6h16M4 12h10M4 18h16"/><circle cx="18" cy="12" r="2"/></svg>
+          <h3>Automação de processos</h3>
+          <p>Eliminação de tarefas manuais e repetitivas com RPA, Power Automate e integrações entre sistemas administrativos e operacionais.</p>
+          <ul class="service-list">
+            <li>RPA &amp; Power Automate</li>
+            <li>Integração entre sistemas (ERP, planilhas, e-mail)</li>
+            <li>Sistemas administrativos sob medida</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <span class="service-tag">Gestão &amp; dados</span>
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 20V10M11 20V4M18 20v-7"/></svg>
+          <h3>Consultoria em gestão</h3>
+          <p>Diagnóstico de processos, redesenho organizacional e indicadores que conectam a operação ao resultado financeiro do negócio.</p>
+          <ul class="service-list">
+            <li>Diagnóstico de eficiência e custos</li>
+            <li>Indicadores &amp; BI gerencial</li>
+            <li>Redesenho de processos e organograma</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METHOD -->
+  <section id="metodo" class="light">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Como atuamos</span>
+        <h2>Um método, do diagnóstico ao resultado sustentado.</h2>
+        <p>Atuamos como parceiros de execução, não apenas de recomendação — ficamos até o ganho aparecer na operação.</p>
+      </div>
+
+      <div class="method-track">
+        <div class="method-step">
+          <div class="method-num">01</div>
+          <h3>Diagnóstico</h3>
+          <p>Mapeamento do processo real, levantamento de gargalos físicos e administrativos, e priorização por impacto e esforço.</p>
+        </div>
+        <div class="method-step">
+          <div class="method-num">02</div>
+          <h3>Desenho da solução</h3>
+          <p>Definição da arquitetura técnica — sensores, sistemas, fluxos automatizados — e do modelo de gestão para sustentar o resultado.</p>
+        </div>
+        <div class="method-step">
+          <div class="method-num">03</div>
+          <h3>Implementação</h3>
+          <p>Instalação, integração e desenvolvimento das automações em conjunto com as equipes do cliente, sem parar a operação.</p>
+        </div>
+        <div class="method-step">
+          <div class="method-num">04</div>
+          <h3>Resultado sustentado</h3>
+          <p>Indicadores em acompanhamento contínuo, ajustes finos e transferência de conhecimento para a equipe interna.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METRICS -->
+  <section id="numeros" class="metrics" style="padding:70px 0;">
+    <div class="wrap">
+      <div class="metrics-grid">
+        <div class="metric">
+          <div class="num">↓ custos</div>
+          <div class="cap">redução de desperdício e retrabalho operacional</div>
+        </div>
+        <div class="metric">
+          <div class="num">↑ produtividade</div>
+          <div class="cap">horas devolvidas ao time com tarefas automatizadas</div>
+        </div>
+        <div class="metric">
+          <div class="num">100%</div>
+          <div class="cap">rastreabilidade de processo do sensor ao relatório</div>
+        </div>
+        <div class="metric">
+          <div class="num">1 parceiro</div>
+          <div class="cap">para engenharia, sistemas e gestão — sem terceirizar pontas soltas</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="equipe">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Quem está por trás</span>
+        <h2>Uma equipe pequena, com profundidade técnica e de gestão.</h2>
+        <p>Substitua os quadros abaixo pelas fotos reais da equipe — basta trocar o <code style="font-family:var(--mono);color:var(--amber);">src</code> da tag <code style="font-family:var(--mono);color:var(--amber);">&lt;img&gt;</code> no código.</p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-photo">
+            <!-- Para usar foto real: <img src="caminho/da/foto1.jpg" alt="Nome do sócio 1"> e adicionar classe "has-img" na div acima -->
+            <img src="" alt="Foto do sócio 1">
+            <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+            <span class="placeholder-txt">FOTO — SÓCIO 01<br>(substituir imagem)</span>
+          </div>
+          <div class="team-info">
+            <span class="role">Engenharia &amp; Automação</span>
+            <h3>Nome do sócio 1</h3>
+            <p>Breve histórico profissional: formação, anos de experiência em automação/engenharia e principais projetos entregues.</p>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="" alt="Foto do sócio 2">
+            <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+            <span class="placeholder-txt">FOTO — SÓCIO 02<br>(substituir imagem)</span>
+          </div>
+          <div class="team-info">
+            <span class="role">Gestão &amp; Tecnologia</span>
+            <h3>Nome do sócio 2</h3>
+            <p>Breve histórico profissional: formação, anos de experiência em administração/tecnologia e principais projetos entregues.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contato" class="contact">
+    <div class="wrap contact-grid">
+      <div class="contact-side">
+        <span class="eyebrow">Fale com a NEXO</span>
+        <h2>Vamos mapear onde sua operação está perdendo dinheiro.</h2>
+        <p>Preencha os dados abaixo. Retornamos em até 1 dia útil com os próximos passos do diagnóstico gratuito.</p>
+
+        <div class="contact-detail"><span class="k">E-mail</span><span>contato@nexoconsultoria.com.br</span></div>
+        <div class="contact-detail"><span class="k">Telefone</span><span>(00) 00000-0000</span></div>
+        <div class="contact-detail"><span class="k">Atuação</span><span>Indústrias, comércios e empresas de serviço — atendimento remoto e in loco</span></div>
+      </div>
+
+      <form onsubmit="event.preventDefault(); alert('Formulário de exemplo — conectar a um serviço de envio (e-mail, CRM, etc.) antes de publicar.');">
+        <div class="form-row">
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" required>
+          </div>
+          <div class="field">
+            <label for="empresa">Empresa</label>
+            <input id="empresa" type="text" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input id="email" type="email" required>
+          </div>
+          <div class="field">
+            <label for="telefone">Telefone</label>
+            <input id="telefone" type="tel">
+          </div>
+        </div>
+        <div class="field">
+          <label for="segmento">Segmento</label>
+          <select id="segmento">
+            <option>Indústria</option>
+            <option>Comércio</option>
+            <option>Serviços</option>
+            <option>Outro</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="mensagem">O que você precisa resolver?</label>
+          <textarea id="mensagem" placeholder="Ex: perdemos muito tempo com relatórios manuais, queremos automatizar a linha X..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Solicitar diagnóstico gratuito</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <a href="#top" class="logo">NEXO</a>
+    <div class="footer-links">
+      <a href="#servicos">Soluções</a>
+      <a href="#metodo">Método</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#contato">Contato</a>
+    </div>
+    <span class="footer-note">© 2026 NEXO Consultoria. Mockup de site — não publicado.</span>
+  </div>
+</footer>
+
+</body>
+</html>

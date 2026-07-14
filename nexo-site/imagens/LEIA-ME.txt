@@ -1,0 +1,3 @@
+Coloque aqui as fotos da equipe (ex: socio-1.jpg, socio-2.jpg).
+Depois de adicionar, siga as instruções do README.md na raiz do projeto
+para ligar cada foto ao card correspondente no site.
