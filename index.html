@@ -4,6 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NEXUS — Consultoria em Engenharia, Automação &amp; Gestão Industrial</title>
+<meta name="description" content="Consultoria em engenharia, automação industrial e gestão. Integramos sensores, sistemas e processos administrativos para reduzir custos e aumentar a competitividade de indústrias, comércios e empresas de serviço.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.nexusconsultoria.com.br/">
+
+<!-- Open Graph / compartilhamento em redes sociais -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="NEXO — Engenharia, Automação &amp; Gestão Industrial">
+<meta property="og:description" content="Consultoria que integra engenharia, tecnologia e gestão para reduzir custos e aumentar a competitividade de indústrias, comércios e empresas de serviço.">
+<meta property="og:url" content="https://www.nexusconsultoria.com.br/">
+<meta property="og:image" content="https://www.nexusconsultoria.com.br/imagens/og-image.jpg">
+
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -63,14 +77,14 @@
 
           <rect class="sch-node-box" x="16" y="160" width="118" height="58" rx="2"/>
           <text class="sch-label" x="32" y="185">ERP / DADOS</text>
-          <text class="sch-label-sub" x="23" y="200">gestão administrativa</text>
+          <text class="sch-label-sub" x="32" y="200">gestão administrativa</text>
 
           <rect class="sch-node-box" x="16" y="290" width="118" height="58" rx="2"/>
           <text class="sch-label" x="32" y="315">RPA / FLUXOS</text>
           <text class="sch-label-sub" x="32" y="330">Power Automate</text>
 
           <rect class="sch-node-box" x="270" y="160" width="134" height="58" rx="2"/>
-          <text class="sch-label" x="288" y="185">PAINEL NEXUS</text>
+          <text class="sch-label" x="288" y="185">PAINEL NEXO</text>
           <text class="sch-label-sub" x="288" y="200">decisão &amp; resultado</text>
 
           <!-- connecting lines -->
@@ -255,34 +269,38 @@
         <p>Preencha os dados abaixo. Retornamos em até 1 dia útil com os próximos passos do diagnóstico gratuito.</p>
 
         <div class="contact-detail"><span class="k">E-mail</span><span>contato@nexoconsultoria.com.br</span></div>
-        <div class="contact-detail"><span class="k">Telefone</span><span>(00) 00000-0000</span></div>
+        <div class="contact-detail"><span class="k">WhatsApp</span><span><a href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20a%20NEXO" target="_blank" rel="noopener">(00) 00000-0000 — conversar agora</a></span></div>
         <div class="contact-detail"><span class="k">Atuação</span><span>Indústrias, comércios e empresas de serviço — atendimento remoto e in loco</span></div>
       </div>
 
-      <form onsubmit="event.preventDefault(); alert('Formulário de exemplo — conectar a um serviço de envio (e-mail, CRM, etc.) antes de publicar.');">
+      <form id="contactForm" action="https://formspree.io/f/SEU_ID_FORMSPREE" method="POST">
+        <!-- Campo anti-spam (honeypot). Deixe sempre vazio e oculto. -->
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+        <input type="hidden" name="_subject" value="Novo contato pelo site — NEXO">
+
         <div class="form-row">
           <div class="field">
             <label for="nome">Nome</label>
-            <input id="nome" type="text" required>
+            <input id="nome" name="nome" type="text" required>
           </div>
           <div class="field">
             <label for="empresa">Empresa</label>
-            <input id="empresa" type="text" required>
+            <input id="empresa" name="empresa" type="text" required>
           </div>
         </div>
         <div class="form-row">
           <div class="field">
             <label for="email">E-mail</label>
-            <input id="email" type="email" required>
+            <input id="email" name="email" type="email" required>
           </div>
           <div class="field">
             <label for="telefone">Telefone</label>
-            <input id="telefone" type="tel">
+            <input id="telefone" name="telefone" type="tel">
           </div>
         </div>
         <div class="field">
           <label for="segmento">Segmento</label>
-          <select id="segmento">
+          <select id="segmento" name="segmento">
             <option>Indústria</option>
             <option>Comércio</option>
             <option>Serviços</option>
@@ -291,7 +309,7 @@
         </div>
         <div class="field">
           <label for="mensagem">O que você precisa resolver?</label>
-          <textarea id="mensagem" placeholder="Ex: perdemos muito tempo com relatórios manuais, queremos automatizar a linha X..."></textarea>
+          <textarea id="mensagem" name="mensagem" placeholder="Ex: perdemos muito tempo com relatórios manuais, queremos automatizar a linha X..."></textarea>
         </div>
         <div class="field field-consent">
           <label class="consent-label">
@@ -299,7 +317,8 @@
             <span>Concordo com o tratamento dos meus dados conforme a <a href="politica-de-privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a>.</span>
           </label>
         </div>
-        <button type="submit" class="btn btn-primary">Solicitar diagnóstico gratuito</button>
+        <button type="submit" class="btn btn-primary" id="formSubmitBtn">Solicitar diagnóstico gratuito</button>
+        <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
       </form>
     </div>
   </section>
@@ -321,7 +340,7 @@
       <a href="#contato">Contato</a>
       <a href="politica-de-privacidade.html">Privacidade</a>
     </div>
-    <span class="footer-note">© 2026 NEXO Consultoria. Mockup de site — não publicado.</span>
+    <span class="footer-note">© 2026 NEXO Consultoria.</span>
   </div>
 </footer>
 
