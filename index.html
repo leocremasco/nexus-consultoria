@@ -307,6 +307,7 @@
       <a href="#metodo">Método</a>
       <a href="#equipe">Equipe</a>
       <a href="#contato">Contato</a>
+      <a href="politica-de-privacidade.html">Privacidade</a>
     </div>
     <span class="footer-note">© 2026 NEXO Consultoria. Mockup de site — não publicado.</span>
   </div>
@@ -326,6 +327,42 @@
       menuToggle.setAttribute('aria-expanded', 'false');
       menuToggle.textContent = '☰';
     });
+  });
+
+  // Envio do formulário de contato via Formspree (sem recarregar a página)
+  const contactForm = document.getElementById('contactForm');
+  const formStatus = document.getElementById('formStatus');
+  const formSubmitBtn = document.getElementById('formSubmitBtn');
+
+  contactForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    formStatus.textContent = '';
+    formStatus.className = 'form-status';
+    formSubmitBtn.disabled = true;
+    formSubmitBtn.textContent = 'Enviando...';
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: 'POST',
+        body: new FormData(contactForm),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        contactForm.reset();
+        formStatus.textContent = 'Mensagem enviada! Entraremos em contato em até 1 dia útil.';
+        formStatus.classList.add('success');
+      } else {
+        formStatus.textContent = 'Não foi possível enviar agora. Tente novamente ou fale pelo WhatsApp.';
+        formStatus.classList.add('error');
+      }
+    } catch (err) {
+      formStatus.textContent = 'Erro de conexão. Tente novamente ou fale pelo WhatsApp.';
+      formStatus.classList.add('error');
+    } finally {
+      formSubmitBtn.disabled = false;
+      formSubmitBtn.textContent = 'Solicitar diagnóstico gratuito';
+    }
   });
 </script>
 </body>
