@@ -291,7 +291,9 @@ section{padding:110px 0;}
   overflow:hidden;
 }
 .team-photo{
-  aspect-ratio:4/3;
+  aspect-ratio:unset;
+  height:450px;
+  width: 550px;
   background:
     linear-gradient(135deg, rgba(240,162,2,0.08), rgba(28,61,94,0.4)),
     repeating-linear-gradient(45deg, rgba(255,255,255,0.035) 0 2px, transparent 2px 14px);
@@ -301,7 +303,9 @@ section{padding:110px 0;}
   position:relative;
   border-bottom:1px solid rgba(255,255,255,0.08);
 }
-.team-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:none;}
+.team-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:none;
+object-position: center top;
+}
 .team-photo.has-img img{display:block;}
 .team-photo.has-img .placeholder-txt{display:none;}
 .placeholder-txt{
