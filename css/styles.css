@@ -293,7 +293,7 @@ section{padding:110px 0;}
 .team-photo{
   aspect-ratio:unset;
   height:450px;
-  width: 550px;
+  width: 100%;
   background:
     linear-gradient(135deg, rgba(240,162,2,0.08), rgba(28,61,94,0.4)),
     repeating-linear-gradient(45deg, rgba(255,255,255,0.035) 0 2px, transparent 2px 14px);
@@ -433,6 +433,7 @@ footer{
   form{padding:24px;}
   .team-info{padding:22px 20px 26px;}
   .footer-grid{flex-direction:column;align-items:flex-start;text-align:left;}
+  .team-photo{height:280px;}
 }
 
 /* ---------- CONSENT CHECKBOX ---------- */
